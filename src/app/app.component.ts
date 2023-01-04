@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  showButton:boolean=false
   title = 'Professional_Template';
-  onNavigate(){
-    
+  @HostListener('document:scroll ')
+  scroll() {
+    if (document.documentElement.scrollTop > 15) {
+      this.showButton = true;
+    } else {
+      this.showButton = false;
+    }
+  }
+  scrollToTop(){
+
     document.body.scrollTop = document.documentElement.scrollTop = 0;
   }
 }

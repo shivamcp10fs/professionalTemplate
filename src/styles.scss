@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+body,
+html{
+    padding :0px;
+    margin : 0px;
+}
+
+
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+body {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 400;
+    // background-color: #6b3ae3;
+
+}
+
+.home-welcome-picture-container,
+.home-welcome-intro-container {
+    padding :0;
+}
+// ::ng-deep:root{
+.home-bg {
+    background: rgba(0, 0, 0, 0) url(./assets/welcome-bg.jpg) no-repeat scroll center center/cover;
+
+}
+.home-bg-color {
+    background-color: #6b3ae3;
+    opacity: 96%;
+}
