@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Professional_Template';
+  onNavigate(){
+    
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 }
