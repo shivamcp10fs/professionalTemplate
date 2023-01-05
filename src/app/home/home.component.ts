@@ -1,10 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent {
+export class HomeComponent implements AfterViewInit, OnInit {
+
+ngAfterViewInit(): void {
+
+
+}
+ngOnInit(): void {
+  
+}
 
 }
