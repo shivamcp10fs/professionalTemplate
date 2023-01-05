@@ -13,12 +13,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { FeaturesComponent } from './features/features.component';
 import { HomeComponent } from './home/home.component';
+import { ScreenshotComponent } from './screenshot/screenshot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PublicComponent,
     FeaturesComponent,
+    ScreenshotComponent,
     
  
 
